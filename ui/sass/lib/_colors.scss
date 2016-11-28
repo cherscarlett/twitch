@@ -1,0 +1,11 @@
+$color-green: #00FF00;
+$color-white: #FFFFFF;
+
+$transparency-white: fade-out($color-white, .7);
+
+$colors: (
+    overlay: (
+        chromakey: $color-green,
+        foreground: $transparency-white
+    )
+);

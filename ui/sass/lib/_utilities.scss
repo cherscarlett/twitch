@@ -1,0 +1,39 @@
+// Functions
+
+@function getNestedMap($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@function getProperty($prop, $properties...) {
+    @return getNestedMap($colors, $prop, $properties...);
+}
+
+@function getHeightFromWidth($aspect-ratio, $width) {
+    $height: 1/($aspect-ratio) * $width;
+
+    @return $height;
+}
+
+@mixin center($position, $sides...) {
+    position: $position;
+
+
+    $x: 0;
+    $y: 0;
+
+    @each $side in $sides {
+        @if $side == top {
+            $y: -50%;
+        }
+        @if $side == left {
+            $x: -50%;
+        }
+
+        #{$side}: 50%;
+    }
+
+    transform: translate3d($x, $y, 0);
+}

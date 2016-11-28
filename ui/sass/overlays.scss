@@ -1,0 +1,14 @@
+@import 'lib/_reset';
+
+@import "lib/_utilities";
+
+@import "lib/_colors";
+@import "lib/_typography";
+
+@import "components/_window";
+@import "components/_background";
+@import "components/_text";
+
+body {
+  background-color: getProperty(overlay, chromakey);
+}

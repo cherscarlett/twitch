@@ -1,0 +1,131 @@
+$dot-size: 2px;
+$dot-space: 64px;
+$dot-color: getProperty(overlay, foreground);
+$outline-duration: 30s;
+$interval: 20s;
+$boxmove-duration: $outline-duration * 5 + ($outline-duration - $interval);
+
+$interval-percentage: percentage((100/($outline-duration/($outline-duration - $interval)))/100);
+$animation-point-percentage: $interval-percentage + ((100s/$outline-duration)/100)*100%;
+
+@keyframes outline {
+    0% {
+        stroke-dashoffset: 1000;
+        opacity: 1;
+    }
+    #{$interval-percentage/2} {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    // 10s
+    #{$interval-percentage} {
+        stroke-dashoffset: 1000;
+        opacity: 0;
+    }
+    // 11s-40s
+    #{$animation-point-percentage} {
+        opacity: 0;
+        stroke-dashoffset: 1000;
+    }
+}
+
+$interval-percentage: percentage((100/($boxmove-duration/($outline-duration - $interval)))/100);
+$animation-point-percentage: ((100s/$boxmove-duration)/100)*100%;
+
+$animation-duration-percentage: percentage((100/($boxmove-duration/($outline-duration)))/100);
+
+$initial-coordinate-x: ($dot-space/2) - ($dot-size/2);
+$initial-coordinate-y: ($dot-space/2) - ($dot-size/2);
+
+$coordinate-spacing: $dot-space;
+$max-x: floor(1024/$dot-space);
+$max-y: floor(768/$dot-space);
+$iterations: ceil($boxmove-duration/$outline-duration);
+
+@keyframes movebox {
+
+    // 10s
+    #{$interval-percentage} {
+        left: $initial-coordinate-x;
+        top: $initial-coordinate-y;
+    }
+
+    @for $i from 1 to $iterations {
+        #{$interval-percentage + ($animation-duration-percentage * ($i - 1)) + $animation-point-percentage}, #{($animation-duration-percentage * $i) + $interval-percentage } {
+            left: $initial-coordinate-x + ($dot-space * random($max-x));
+            top: $initial-coordinate-y + ($dot-space * random($max-y));
+        }
+    }
+}
+
+
+@keyframes fadeboxes {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadepoints {
+    10% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 0;
+    }
+}
+
+.background {
+  	background-size: $dot-space $dot-space;
+    background-image: repeating-radial-gradient(center center, $dot-color, $dot-color $dot-size/2, transparent $dot-size, transparent 100%);
+    background-position: top left;
+    height: 100vh;
+
+    &-dot {
+        &-highlight {
+            position: absolute;
+            fill: fade-in($dot-color, 1);
+            opacity: 0;
+            @for $i from 0 to 36 {
+                &[data-index="#{$i}"] {
+                    left: $initial-coordinate-x + ($dot-space * random($max-x));
+                    top: $initial-coordinate-y + ($dot-space * random($max-y));
+                    animation: fadepoints unquote((random($interval) + 5) + 's') ease-in-out infinite;
+                    animation-delay: unquote(random(5000) + 'ms');
+                }
+            }
+        }
+    }
+
+    &-square {
+        fill: none;
+        stroke: $dot-color;
+        stroke-width: $dot-size * 1.5;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: outline $outline-duration linear infinite;
+        opacity: 1;
+
+        &-container {
+            position: absolute;
+            left: $initial-coordinate-x;
+            top: $initial-coordinate-y;
+            animation: movebox $boxmove-duration linear infinite;
+        }
+
+        &-filled {
+
+            position: absolute;
+            fill: $dot-color;
+
+            @for $i from 0 to 26 {
+                &[data-index="#{$i}"] {
+                    left: $initial-coordinate-x + ($dot-space * random($max-x));
+                    top: $initial-coordinate-y + ($dot-space * random($max-y));
+                    opacity: random(70)/100;
+                    animation: fadeboxes unquote((random($interval) + 5) + 's') ease-out alternate infinite;
+                }
+            }
+        }
+    }
+}
