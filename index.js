@@ -20,7 +20,7 @@ var route = require('koa-route'),
     serve = require('koa-static-folder'),
     marko = require('marko');
 
-var port = '8888';
+var port = process.env.PORT || '8888';
 
 app.use(serve('./public')).use(route.get('/', index)).use(route.get('/overlays/:id', overlay));
 

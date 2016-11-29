@@ -9,7 +9,7 @@ let route = require('koa-route'),
     serve = require('koa-static-folder'),
     marko = require('marko');
 
-const port = '8888';
+const port = process.env.PORT || '8888';
 
 app
     .use(serve('./public'))
