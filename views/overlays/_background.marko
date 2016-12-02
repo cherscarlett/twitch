@@ -1,0 +1,8 @@
+layout-use('../layouts/overlays.marko', data)
+    layout-put into="body"
+        svg.background-square-container height="66" width="66"
+            polygon.background-square points="0 0 0 66 66 66 66 0"
+        svg.background-square-filled height="66" width="66" data-index="${i}" for(i from 0 to 25)
+            polygon points="0 0 0 66 66 66 66 0"
+        svg.background-dot-highlight height="3" width="3" data-index="${i}" for(i from 0 to 35)
+            polygon points="0 0 0 3 3 3 3 0"

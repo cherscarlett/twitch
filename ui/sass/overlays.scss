@@ -10,5 +10,7 @@
 @import "components/_text";
 
 body {
-  background-color: getProperty(overlay, chromakey);
+    background-color: getProperty(overlay, chromakey);
+    color: getProperty(overlay, text-color);
+    font-family: getProperty(overlay, font-family);
 }

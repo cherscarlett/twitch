@@ -26,12 +26,14 @@ function *index() {
 }
 
 function *overlay(id) {
-    let data = {
-        title: 'Cherp\'s Twitch Overlays: ' + id.charAt(0).toUpperCase(),
-        id: id
-    }
+    const template = './views/overlays/_' + id + '.marko';
 
-    this.body = marko.load('./views/layouts/overlays.marko').stream(data);
+    let data = {
+                title: 'Cherp\'s Twitch Overlays',
+                id: id
+            }
+
+    this.body = marko.load(template).stream(data);
     this.type = 'text/html';
 }
 

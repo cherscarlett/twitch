@@ -47,21 +47,22 @@ function index() {
 }
 
 function overlay(id) {
-    var data;
+    var template, context;
     return regeneratorRuntime.wrap(function overlay$(_context2) {
         while (1) {
             switch (_context2.prev = _context2.next) {
                 case 0:
-                    data = {
-                        title: 'Cherp\'s Twitch Overlays: ' + id.charAt(0).toUpperCase(),
+                    template = './views/overlays/_' + id + '.marko';
+                    context = {
+                        title: 'Cherp\'s Twitch Overlays',
                         id: id
                     };
 
 
-                    this.body = marko.load('./views/layouts/overlays.marko').stream(data);
+                    this.body = marko.load(template).stream(context);
                     this.type = 'text/html';
 
-                case 3:
+                case 4:
                 case 'end':
                     return _context2.stop();
             }

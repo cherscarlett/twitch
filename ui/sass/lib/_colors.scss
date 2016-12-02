@@ -2,10 +2,13 @@ $color-green: #00FF00;
 $color-white: #FFFFFF;
 
 $transparency-white: fade-out($color-white, .7);
+$transparency-white-less: fade-out($color-white, .3);
 
 $colors: (
     overlay: (
         chromakey: $color-green,
-        foreground: $transparency-white
+        foreground: $transparency-white,
+        text-color: $transparency-white-less,
+        font-family: unquote("'Amatic SC', sans-serif")
     )
 );

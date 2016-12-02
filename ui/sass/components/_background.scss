@@ -84,7 +84,9 @@ $iterations: ceil($boxmove-duration/$outline-duration);
     &-dot {
         &-highlight {
             position: absolute;
-            fill: fade-in($dot-color, 1);
+            fill: transparent;
+            stroke:fade-in($dot-color, 1);
+            stroke-width: 1px;
             opacity: 0;
             @for $i from 0 to 36 {
                 &[data-index="#{$i}"] {
