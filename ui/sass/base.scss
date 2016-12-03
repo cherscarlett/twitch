@@ -67,10 +67,6 @@ header {
 
     polygon {
         opacity: 0;
-
-        .no-js & {
-            opacity: 1;
-        }
     }
 }
 
@@ -79,13 +75,6 @@ header {
     min-height: 300px;
     filter: brightness(1.3) grayscale(100%);
     opacity: .5;
-
-    > polygon {
-        .no-cssanimations & {
-            transform: scale(2);
-            opacity: 1;
-        }
-    }
 }
 
 @keyframes animation {
@@ -96,8 +85,46 @@ header {
 }
 
 svg.cat > g polygon {
-  animation: animation 1.5s linear 1 forwards;
+  animation: animation 700ms linear 1 forwards;
   transform: scale(0);
   transform-origin: center center;
   opacity: 0;
+}
+
+.external {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    li {
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        filter: grayscale(100%);
+        transition: filter 600ms ease-in-out;
+
+        a {
+            text-indent: -10000px;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+        }
+
+        &:hover {
+            filter: grayscale(0%) brightness(1.2);
+        }
+    }
+
+    $links: twitter, twitch;
+
+    @each $link in $links {
+
+        .#{$link} {
+            background-image: url(/public/images/#{$link}.svg);
+        }
+
+    }
 }
