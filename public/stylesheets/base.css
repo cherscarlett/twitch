@@ -87,36 +87,745 @@ header {
 .loader {
   width: 100%;
   text-align: center; }
-  .loader polygon {
-    opacity: 0; }
 
-.cat {
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: scale(0.5) rotate(45deg);
+            transform: scale(0.5) rotate(45deg);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(0.8) rotate(0);
+            transform: scale(0.8) rotate(0);
+    opacity: 1; }
+  75% {
+    -webkit-transform: scale(0.8) rotate(0);
+            transform: scale(0.8) rotate(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1; } }
+
+@keyframes animation {
+  0% {
+    -webkit-transform: scale(0.5) rotate(45deg);
+            transform: scale(0.5) rotate(45deg);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(0.8) rotate(0);
+            transform: scale(0.8) rotate(0);
+    opacity: 1; }
+  75% {
+    -webkit-transform: scale(0.8) rotate(0);
+            transform: scale(0.8) rotate(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1; } }
+
+svg.cat {
   height: 30vh;
   min-height: 300px;
   -webkit-filter: brightness(1.3) grayscale(100%);
           filter: brightness(1.3) grayscale(100%);
   opacity: .5; }
-
-@-webkit-keyframes animation {
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1; } }
-
-@keyframes animation {
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1; } }
-
-svg.cat > g polygon {
-  -webkit-animation: animation 700ms linear 1 forwards;
-          animation: animation 700ms linear 1 forwards;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  opacity: 0; }
+  svg.cat polygon {
+    -webkit-transform: scale(0) rotate(90deg);
+            transform: scale(0) rotate(90deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    opacity: 0; }
+  svg.cat polygon:nth-of-type(1) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 10.01429ms;
+            animation-delay: 10.01429ms; }
+  svg.cat polygon:nth-of-type(2) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 20.05714ms;
+            animation-delay: 20.05714ms; }
+  svg.cat polygon:nth-of-type(3) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 30.12857ms;
+            animation-delay: 30.12857ms; }
+  svg.cat polygon:nth-of-type(4) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 40.22857ms;
+            animation-delay: 40.22857ms; }
+  svg.cat polygon:nth-of-type(5) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 50.35714ms;
+            animation-delay: 50.35714ms; }
+  svg.cat polygon:nth-of-type(6) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 60.51429ms;
+            animation-delay: 60.51429ms; }
+  svg.cat polygon:nth-of-type(7) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 70.7ms;
+            animation-delay: 70.7ms; }
+  svg.cat polygon:nth-of-type(8) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 80.91429ms;
+            animation-delay: 80.91429ms; }
+  svg.cat polygon:nth-of-type(9) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 91.15714ms;
+            animation-delay: 91.15714ms; }
+  svg.cat polygon:nth-of-type(10) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 101.42857ms;
+            animation-delay: 101.42857ms; }
+  svg.cat polygon:nth-of-type(11) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 111.72857ms;
+            animation-delay: 111.72857ms; }
+  svg.cat polygon:nth-of-type(12) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 122.05714ms;
+            animation-delay: 122.05714ms; }
+  svg.cat polygon:nth-of-type(13) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 132.41429ms;
+            animation-delay: 132.41429ms; }
+  svg.cat polygon:nth-of-type(14) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 142.8ms;
+            animation-delay: 142.8ms; }
+  svg.cat polygon:nth-of-type(15) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 153.21429ms;
+            animation-delay: 153.21429ms; }
+  svg.cat polygon:nth-of-type(16) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 163.65714ms;
+            animation-delay: 163.65714ms; }
+  svg.cat polygon:nth-of-type(17) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 174.12857ms;
+            animation-delay: 174.12857ms; }
+  svg.cat polygon:nth-of-type(18) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 184.62857ms;
+            animation-delay: 184.62857ms; }
+  svg.cat polygon:nth-of-type(19) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 195.15714ms;
+            animation-delay: 195.15714ms; }
+  svg.cat polygon:nth-of-type(20) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 205.71429ms;
+            animation-delay: 205.71429ms; }
+  svg.cat polygon:nth-of-type(21) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 216.3ms;
+            animation-delay: 216.3ms; }
+  svg.cat polygon:nth-of-type(22) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 226.91429ms;
+            animation-delay: 226.91429ms; }
+  svg.cat polygon:nth-of-type(23) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 237.55714ms;
+            animation-delay: 237.55714ms; }
+  svg.cat polygon:nth-of-type(24) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 248.22857ms;
+            animation-delay: 248.22857ms; }
+  svg.cat polygon:nth-of-type(25) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 258.92857ms;
+            animation-delay: 258.92857ms; }
+  svg.cat polygon:nth-of-type(26) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 269.65714ms;
+            animation-delay: 269.65714ms; }
+  svg.cat polygon:nth-of-type(27) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 280.41429ms;
+            animation-delay: 280.41429ms; }
+  svg.cat polygon:nth-of-type(28) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 291.2ms;
+            animation-delay: 291.2ms; }
+  svg.cat polygon:nth-of-type(29) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 302.01429ms;
+            animation-delay: 302.01429ms; }
+  svg.cat polygon:nth-of-type(30) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 312.85714ms;
+            animation-delay: 312.85714ms; }
+  svg.cat polygon:nth-of-type(31) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 323.72857ms;
+            animation-delay: 323.72857ms; }
+  svg.cat polygon:nth-of-type(32) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 334.62857ms;
+            animation-delay: 334.62857ms; }
+  svg.cat polygon:nth-of-type(33) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 345.55714ms;
+            animation-delay: 345.55714ms; }
+  svg.cat polygon:nth-of-type(34) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 356.51429ms;
+            animation-delay: 356.51429ms; }
+  svg.cat polygon:nth-of-type(35) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 367.5ms;
+            animation-delay: 367.5ms; }
+  svg.cat polygon:nth-of-type(36) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 378.51429ms;
+            animation-delay: 378.51429ms; }
+  svg.cat polygon:nth-of-type(37) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 389.55714ms;
+            animation-delay: 389.55714ms; }
+  svg.cat polygon:nth-of-type(38) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 400.62857ms;
+            animation-delay: 400.62857ms; }
+  svg.cat polygon:nth-of-type(39) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 411.72857ms;
+            animation-delay: 411.72857ms; }
+  svg.cat polygon:nth-of-type(40) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 422.85714ms;
+            animation-delay: 422.85714ms; }
+  svg.cat polygon:nth-of-type(41) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 434.01429ms;
+            animation-delay: 434.01429ms; }
+  svg.cat polygon:nth-of-type(42) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 445.2ms;
+            animation-delay: 445.2ms; }
+  svg.cat polygon:nth-of-type(43) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 456.41429ms;
+            animation-delay: 456.41429ms; }
+  svg.cat polygon:nth-of-type(44) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 467.65714ms;
+            animation-delay: 467.65714ms; }
+  svg.cat polygon:nth-of-type(45) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 478.92857ms;
+            animation-delay: 478.92857ms; }
+  svg.cat polygon:nth-of-type(46) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 490.22857ms;
+            animation-delay: 490.22857ms; }
+  svg.cat polygon:nth-of-type(47) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 501.55714ms;
+            animation-delay: 501.55714ms; }
+  svg.cat polygon:nth-of-type(48) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 512.91429ms;
+            animation-delay: 512.91429ms; }
+  svg.cat polygon:nth-of-type(49) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 524.3ms;
+            animation-delay: 524.3ms; }
+  svg.cat polygon:nth-of-type(50) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 535.71429ms;
+            animation-delay: 535.71429ms; }
+  svg.cat polygon:nth-of-type(51) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 547.15714ms;
+            animation-delay: 547.15714ms; }
+  svg.cat polygon:nth-of-type(52) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 558.62857ms;
+            animation-delay: 558.62857ms; }
+  svg.cat polygon:nth-of-type(53) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 570.12857ms;
+            animation-delay: 570.12857ms; }
+  svg.cat polygon:nth-of-type(54) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 581.65714ms;
+            animation-delay: 581.65714ms; }
+  svg.cat polygon:nth-of-type(55) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 593.21429ms;
+            animation-delay: 593.21429ms; }
+  svg.cat polygon:nth-of-type(56) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 604.8ms;
+            animation-delay: 604.8ms; }
+  svg.cat polygon:nth-of-type(57) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 616.41429ms;
+            animation-delay: 616.41429ms; }
+  svg.cat polygon:nth-of-type(58) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 628.05714ms;
+            animation-delay: 628.05714ms; }
+  svg.cat polygon:nth-of-type(59) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 639.72857ms;
+            animation-delay: 639.72857ms; }
+  svg.cat polygon:nth-of-type(60) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 651.42857ms;
+            animation-delay: 651.42857ms; }
+  svg.cat polygon:nth-of-type(61) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 663.15714ms;
+            animation-delay: 663.15714ms; }
+  svg.cat polygon:nth-of-type(62) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 674.91429ms;
+            animation-delay: 674.91429ms; }
+  svg.cat polygon:nth-of-type(63) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 686.7ms;
+            animation-delay: 686.7ms; }
+  svg.cat polygon:nth-of-type(64) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 698.51429ms;
+            animation-delay: 698.51429ms; }
+  svg.cat polygon:nth-of-type(65) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 710.35714ms;
+            animation-delay: 710.35714ms; }
+  svg.cat polygon:nth-of-type(66) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 722.22857ms;
+            animation-delay: 722.22857ms; }
+  svg.cat polygon:nth-of-type(67) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 734.12857ms;
+            animation-delay: 734.12857ms; }
+  svg.cat polygon:nth-of-type(68) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 746.05714ms;
+            animation-delay: 746.05714ms; }
+  svg.cat polygon:nth-of-type(69) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 758.01429ms;
+            animation-delay: 758.01429ms; }
+  svg.cat polygon:nth-of-type(70) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 770ms;
+            animation-delay: 770ms; }
+  svg.cat polygon:nth-of-type(71) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 782.01429ms;
+            animation-delay: 782.01429ms; }
+  svg.cat polygon:nth-of-type(72) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 794.05714ms;
+            animation-delay: 794.05714ms; }
+  svg.cat polygon:nth-of-type(73) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 806.12857ms;
+            animation-delay: 806.12857ms; }
+  svg.cat polygon:nth-of-type(74) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 818.22857ms;
+            animation-delay: 818.22857ms; }
+  svg.cat polygon:nth-of-type(75) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 830.35714ms;
+            animation-delay: 830.35714ms; }
+  svg.cat polygon:nth-of-type(76) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 842.51429ms;
+            animation-delay: 842.51429ms; }
+  svg.cat polygon:nth-of-type(77) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 854.7ms;
+            animation-delay: 854.7ms; }
+  svg.cat polygon:nth-of-type(78) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 866.91429ms;
+            animation-delay: 866.91429ms; }
+  svg.cat polygon:nth-of-type(79) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 879.15714ms;
+            animation-delay: 879.15714ms; }
+  svg.cat polygon:nth-of-type(80) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 891.42857ms;
+            animation-delay: 891.42857ms; }
+  svg.cat polygon:nth-of-type(81) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 903.72857ms;
+            animation-delay: 903.72857ms; }
+  svg.cat polygon:nth-of-type(82) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 916.05714ms;
+            animation-delay: 916.05714ms; }
+  svg.cat polygon:nth-of-type(83) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 928.41429ms;
+            animation-delay: 928.41429ms; }
+  svg.cat polygon:nth-of-type(84) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 940.8ms;
+            animation-delay: 940.8ms; }
+  svg.cat polygon:nth-of-type(85) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 953.21429ms;
+            animation-delay: 953.21429ms; }
+  svg.cat polygon:nth-of-type(86) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 965.65714ms;
+            animation-delay: 965.65714ms; }
+  svg.cat polygon:nth-of-type(87) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 978.12857ms;
+            animation-delay: 978.12857ms; }
+  svg.cat polygon:nth-of-type(88) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 990.62857ms;
+            animation-delay: 990.62857ms; }
+  svg.cat polygon:nth-of-type(89) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1003.15714ms;
+            animation-delay: 1003.15714ms; }
+  svg.cat polygon:nth-of-type(90) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1015.71429ms;
+            animation-delay: 1015.71429ms; }
+  svg.cat polygon:nth-of-type(91) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1028.3ms;
+            animation-delay: 1028.3ms; }
+  svg.cat polygon:nth-of-type(92) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1040.91429ms;
+            animation-delay: 1040.91429ms; }
+  svg.cat polygon:nth-of-type(93) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1053.55714ms;
+            animation-delay: 1053.55714ms; }
+  svg.cat polygon:nth-of-type(94) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1066.22857ms;
+            animation-delay: 1066.22857ms; }
+  svg.cat polygon:nth-of-type(95) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1078.92857ms;
+            animation-delay: 1078.92857ms; }
+  svg.cat polygon:nth-of-type(96) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1091.65714ms;
+            animation-delay: 1091.65714ms; }
+  svg.cat polygon:nth-of-type(97) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1104.41429ms;
+            animation-delay: 1104.41429ms; }
+  svg.cat polygon:nth-of-type(98) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1117.2ms;
+            animation-delay: 1117.2ms; }
+  svg.cat polygon:nth-of-type(99) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1130.01429ms;
+            animation-delay: 1130.01429ms; }
+  svg.cat polygon:nth-of-type(100) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1142.85714ms;
+            animation-delay: 1142.85714ms; }
+  svg.cat polygon:nth-of-type(101) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1155.72857ms;
+            animation-delay: 1155.72857ms; }
+  svg.cat polygon:nth-of-type(102) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1168.62857ms;
+            animation-delay: 1168.62857ms; }
+  svg.cat polygon:nth-of-type(103) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1181.55714ms;
+            animation-delay: 1181.55714ms; }
+  svg.cat polygon:nth-of-type(104) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1194.51429ms;
+            animation-delay: 1194.51429ms; }
+  svg.cat polygon:nth-of-type(105) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1207.5ms;
+            animation-delay: 1207.5ms; }
+  svg.cat polygon:nth-of-type(106) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1220.51429ms;
+            animation-delay: 1220.51429ms; }
+  svg.cat polygon:nth-of-type(107) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1233.55714ms;
+            animation-delay: 1233.55714ms; }
+  svg.cat polygon:nth-of-type(108) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1246.62857ms;
+            animation-delay: 1246.62857ms; }
+  svg.cat polygon:nth-of-type(109) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1259.72857ms;
+            animation-delay: 1259.72857ms; }
+  svg.cat polygon:nth-of-type(110) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1272.85714ms;
+            animation-delay: 1272.85714ms; }
+  svg.cat polygon:nth-of-type(111) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1286.01429ms;
+            animation-delay: 1286.01429ms; }
+  svg.cat polygon:nth-of-type(112) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1299.2ms;
+            animation-delay: 1299.2ms; }
+  svg.cat polygon:nth-of-type(113) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1312.41429ms;
+            animation-delay: 1312.41429ms; }
+  svg.cat polygon:nth-of-type(114) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1325.65714ms;
+            animation-delay: 1325.65714ms; }
+  svg.cat polygon:nth-of-type(115) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1338.92857ms;
+            animation-delay: 1338.92857ms; }
+  svg.cat polygon:nth-of-type(116) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1352.22857ms;
+            animation-delay: 1352.22857ms; }
+  svg.cat polygon:nth-of-type(117) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1365.55714ms;
+            animation-delay: 1365.55714ms; }
+  svg.cat polygon:nth-of-type(118) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1378.91429ms;
+            animation-delay: 1378.91429ms; }
+  svg.cat polygon:nth-of-type(119) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1392.3ms;
+            animation-delay: 1392.3ms; }
+  svg.cat polygon:nth-of-type(120) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1405.71429ms;
+            animation-delay: 1405.71429ms; }
+  svg.cat polygon:nth-of-type(121) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1419.15714ms;
+            animation-delay: 1419.15714ms; }
+  svg.cat polygon:nth-of-type(122) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1432.62857ms;
+            animation-delay: 1432.62857ms; }
+  svg.cat polygon:nth-of-type(123) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1446.12857ms;
+            animation-delay: 1446.12857ms; }
+  svg.cat polygon:nth-of-type(124) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1459.65714ms;
+            animation-delay: 1459.65714ms; }
+  svg.cat polygon:nth-of-type(125) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1473.21429ms;
+            animation-delay: 1473.21429ms; }
+  svg.cat polygon:nth-of-type(126) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1486.8ms;
+            animation-delay: 1486.8ms; }
+  svg.cat polygon:nth-of-type(127) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1500.41429ms;
+            animation-delay: 1500.41429ms; }
+  svg.cat polygon:nth-of-type(128) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1514.05714ms;
+            animation-delay: 1514.05714ms; }
+  svg.cat polygon:nth-of-type(129) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1527.72857ms;
+            animation-delay: 1527.72857ms; }
+  svg.cat polygon:nth-of-type(130) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1541.42857ms;
+            animation-delay: 1541.42857ms; }
+  svg.cat polygon:nth-of-type(131) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1555.15714ms;
+            animation-delay: 1555.15714ms; }
+  svg.cat polygon:nth-of-type(132) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1568.91429ms;
+            animation-delay: 1568.91429ms; }
+  svg.cat polygon:nth-of-type(133) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1582.7ms;
+            animation-delay: 1582.7ms; }
+  svg.cat polygon:nth-of-type(134) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1596.51429ms;
+            animation-delay: 1596.51429ms; }
+  svg.cat polygon:nth-of-type(135) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1610.35714ms;
+            animation-delay: 1610.35714ms; }
+  svg.cat polygon:nth-of-type(136) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1624.22857ms;
+            animation-delay: 1624.22857ms; }
+  svg.cat polygon:nth-of-type(137) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1638.12857ms;
+            animation-delay: 1638.12857ms; }
+  svg.cat polygon:nth-of-type(138) {
+    -webkit-animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+            animation: animation 100ms cubic-bezier(0.64, 0.57, 0.67, 1.53) 1 forwards;
+    -webkit-animation-delay: 1652.05714ms;
+            animation-delay: 1652.05714ms; }
 
 .external {
   display: -webkit-box;
@@ -133,8 +842,8 @@ svg.cat > g polygon {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    -webkit-filter: grayscale(100%) brightness(1.5);
-            filter: grayscale(100%) brightness(1.5);
+    -webkit-filter: grayscale(100%) brightness(1.4);
+            filter: grayscale(100%) brightness(1.4);
     -webkit-transition: all 600ms ease-in-out;
     transition: all 600ms ease-in-out; }
     .external li a {
