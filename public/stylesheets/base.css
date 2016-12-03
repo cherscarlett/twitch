@@ -127,23 +127,21 @@ svg.cat > g polygon {
           justify-content: center;
   padding: 20px 0; }
   .external li {
-    height: 30px;
-    width: 30px;
-    margin: 0 10px;
+    height: 20px;
+    width: 20px;
+    margin: 0 6px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-    -webkit-transition: -webkit-filter 600ms ease-in-out;
-    transition: -webkit-filter 600ms ease-in-out;
-    transition: filter 600ms ease-in-out;
-    transition: filter 600ms ease-in-out, -webkit-filter 600ms ease-in-out; }
+    -webkit-filter: grayscale(100%) brightness(1.5);
+            filter: grayscale(100%) brightness(1.5);
+    -webkit-transition: all 600ms ease-in-out;
+    transition: all 600ms ease-in-out; }
     .external li a {
       text-indent: -10000px;
       display: inline-block;
-      height: 30px;
-      width: 30px; }
+      height: 20px;
+      width: 20px; }
     .external li:hover {
       -webkit-filter: grayscale(0%) brightness(1.2);
               filter: grayscale(0%) brightness(1.2); }

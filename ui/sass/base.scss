@@ -97,20 +97,20 @@ svg.cat > g polygon {
     padding: 20px 0;
 
     li {
-        height: 30px;
-        width: 30px;
-        margin: 0 10px;
+        height: 20px;
+        width: 20px;
+        margin: 0 6px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        filter: grayscale(100%);
-        transition: filter 600ms ease-in-out;
+        filter: grayscale(100%) brightness(1.4);
+        transition: all 600ms ease-in-out;
 
         a {
             text-indent: -10000px;
             display: inline-block;
-            height: 30px;
-            width: 30px;
+            height: 20px;
+            width: 20px;
         }
 
         &:hover {
