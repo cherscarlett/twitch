@@ -197,7 +197,7 @@ function type() {
                                                                   if( char === '>' ) isTag = false;
 
                                                                   if (isTag) return rainCats();
-                                                                  setTimeout(rainCats, 60);
+                                                                  setTimeout(rainCats, 10);
 
                                                                   function escape(event) {
                                                                       var evtobj = window.event? event : event
