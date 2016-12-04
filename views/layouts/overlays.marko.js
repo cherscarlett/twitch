@@ -10,7 +10,7 @@ function create(__helpers) {
   return function render(data, out) {
     out.w("<!DOCTYPE html><html lang=\"en\"><head><title>" +
       escapeXml(data.title) +
-      "</title><link rel=\"stylesheet\" type=\"text/css\" href=\"/public/stylesheets/overlays.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=Amatic+SC\"></head><body" +
+      "</title><link rel=\"stylesheet\" type=\"text/css\" href=\"/public/stylesheets/overlays.css\"><link rel=\"icon\" href=\"/public/favicon.png\" sizes=\"64x64\" type=\"image/png\"><meta charset=\"utf-8\"><meta name=\"lang\" content=\"enUS\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes\"><meta name=\"author\" content=\"Cher Stewart\"></head><body" +
       classAttr(data.id) +
       ">");
 
