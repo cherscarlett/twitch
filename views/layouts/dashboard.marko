@@ -1,0 +1,28 @@
+!DOCTYPE html
+
+html lang="en"
+    head
+        title
+            - ${data.title}
+        link rel="stylesheet" type="text/css" href="/public/stylesheets/base.css"
+        link rel="icon" href="/public/favicon.png" sizes="64x64" type="image/png"
+        meta charset="utf-8"
+        meta name="lang" content="enUS"
+        meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+        meta name="author" content="Cher Stewart"
+    body
+        .background
+        header
+            h1
+                svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="50"
+                    defs
+                        linearGradient id="gradient" x1="100%" y1="100%"
+                            stop offset="0%" stop-color="lightblue" stop-opacity=".5"
+                                animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue" dur="14s" repeatCount="indefinite"
+                            stop offset="0.0990013" stop-color="lightblue" stop-opacity=".5"
+                                animate attributeName="stop-color" values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s" repeatCount="indefinite"
+                                animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="indefinite"
+                    text class='heading' x="50%" y="50%" dy="25%" fill="url(#gradient)"
+                        - Cherp's Dashboard: ${data.id}
+        .body
+            layout-placeholder name="body"

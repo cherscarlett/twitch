@@ -1,0 +1,16 @@
+layout-use('../layouts/overlays.marko', data)
+    layout-put into="body"
+        div.visualizer-container
+            div.loader v-if="loading"
+                - loading...
+            div.source-image v-if="!loading"
+                img src='http://2ysloj1qqu5j32km04pbx2m6.wpengine.netdna-cdn.com/wp-content/uploads/2014/12/musicpanel.png'
+            div.track v-if="!loading"
+                div.track-metadata
+                    div.track-image
+                    h1.track-name
+                div.track-visuals
+
+        script src="https://unpkg.com/vue/dist/vue.js"
+        script src="/socket.io/socket.io.js"
+        script src="/public/javascripts/visualizer.js"

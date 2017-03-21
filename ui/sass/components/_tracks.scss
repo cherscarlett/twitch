@@ -1,0 +1,19 @@
+.track {
+    &s {
+    }
+    padding: 8px;
+    cursor: pointer;
+    &:hover, &.is-playing {
+        font-weight: bold;
+    }
+    &.is-playing {
+        &:before {
+            content: '🔴';
+            display: inline-block;
+            padding-right: 4px;
+        }
+    }
+    &:nth-child(even) {
+        background-color: rgba(128, 128, 128, .4);
+    }
+}
