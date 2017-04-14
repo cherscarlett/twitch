@@ -27,6 +27,7 @@ var animationEventTwo = whichAnimationEvent();
 animationEventTwo && document.querySelector('.output-quit').addEventListener(animationEventTwo, function() {
     setTimeout( function() {
         document.querySelector('.output-quit').innerHTML = "";
+        document.querySelector('.output-quit').style.display = "none";
     }, 600);
 });
 
@@ -173,6 +174,7 @@ function type() {
                                                               if (evtobj.keyCode == 67 && evtobj.ctrlKey)  {
                                                                   document.removeEventListener('keydown',  quit);
                                                                   outputFive.classList.add('cats');
+                                                                  document.querySelector('.output-quit').style.display = "block";
                                                                   rainCats();
                                                                   console.log(ctrlC);
 
@@ -202,7 +204,7 @@ function type() {
                                                                   function escape(event) {
                                                                       var evtobj = window.event? event : event
                                                                       if (evtobj.keyCode == 27)  {
-                                                                          alert('There is no escape.');
+                                                                          alert('There is no escape. Meow.');
                                                                       };
                                                                   }
 
