@@ -8,9 +8,7 @@ if (visualizerEl) {
     el: '.visualizer-container',
     data: {
         track: null,
-        loading: true,
-        playlist: null,
-        index: null
+        loading: true
     },
         methods: {
 
@@ -22,7 +20,6 @@ if (visualizerEl) {
 
 socket.on('trackLoaded', (track) =>  {
     visualizer.track = track;
-    visualizer.loading = false;
 
     var request = new XMLHttpRequest(),
         url = '/audio/' + track.id;
@@ -46,13 +43,26 @@ socket.on('trackLoaded', (track) =>  {
     request.send();
 });
 
+socket.on('trackLoading', () => {
+    visualizer.loading = true;
+});
+
 socket.on('audioReady', () => {
     console.log('Playing audio...');
+    visualizer.loading = false;
     if (audio && audio.currentTime > 0) {
-      audio.pause();
-      audio.currentTime = 0;
+        audio.pause();
+        audio.currentTime = 0;
     }
-    
+
     audio = new Audio('/public/files/audio.mp3');
     audio.play();
+
+    audio.addEventListener("ended", () => {
+        socket.emit('playNextTrack', visualizer.track.data.index);
+    });
 });
+
+socket.on('trackError', () => {
+    socket.emit('playNextTrack', visualizer.track.data.index);
+})

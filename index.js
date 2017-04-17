@@ -198,6 +198,14 @@ io.on('connection', function (socket) {
             return console.log('Failed to get track: ' + err);
         });
     });
+
+    socket.on('playNextTrack', function (index) {
+        io.emit('nextTrack', index);
+    });
+
+    socket.on('disconnect', function () {
+        _ytmp3dlCore2.default.cleanTemp();
+    });
 });
 
 function getTrackStream(id) {
@@ -211,6 +219,8 @@ function getTrackStream(id) {
 
                     audio.on('success', function (result) {
                         return processTrack(result);
+                    }).on('error', function (error) {
+                        return console.log(error);
                     }).callMethod('start');
 
                     this.body = { "status": 200 };
@@ -266,7 +276,9 @@ function spotify() {
 function processTrack(file) {
     var filePath = 'public/files/audio.mp3';
 
-    _fsExtra2.default.unlinkSync(filePath);
+    if (_fsExtra2.default.existsSync(filePath)) {
+        _fsExtra2.default.unlinkSync(filePath);
+    }
 
     _fsExtra2.default.move(file.file_location, filePath, function (err) {
         if (err) return console.error(err);

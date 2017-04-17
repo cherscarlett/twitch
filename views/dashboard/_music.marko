@@ -17,7 +17,7 @@ layout-use('../layouts/dashboard.marko', data)
             div.backdrop v-if='currentTracks.length > 0'
             div.modal v-if='currentTracks.length > 0'
                 ul.tracks
-                    li.track v-for='(item, index) in currentTracks' v-on:click='track($event, index, item.track.artists[0].name, item.track.name)' :class="{ 'is-playing' : item.isPlaying }"
+                    li.track :data-index='index' v-for='(item, index) in currentTracks' v-on:click='track($event, index, item.track.artists[0].name, item.track.name)' :class="{ 'is-playing' : index == 0 }"
                         - {{ item.track.artists[0].name }} -
                         - {{ item.track.name }}
         script src="https://unpkg.com/vue/dist/vue.js"

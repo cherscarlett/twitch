@@ -26,7 +26,7 @@ if (dashboardEl) {
             tracks: function(event, id) {
                 loadTracks(event, id);
             },
-            track: function(event, index, artist, name) {
+            track: function(event, index, artist, name, playlist) {
                 var thisTrack = {
                     index: index,
                     artist: artist,
@@ -72,9 +72,9 @@ function loadTrack(track) {
 
     currentlyPlayingItem && currentlyPlayingItem.classList.remove('is-playing');
 
-    var newCurrentlyPlayingItem = track.event.currentTarget;
+    var newCurrentlyPlayingItem = document.querySelector('li[data-index="' + track.index + '"]');
 
-    newCurrentlyPlayingItem.classList.add('is-playing');
+    newCurrentlyPlayingItem && newCurrentlyPlayingItem.classList.add('is-playing');
 
     socket.emit('getTrack', track);
 }
@@ -105,6 +105,10 @@ function popup(url) {
     if (window.focus) {
         newWindow.focus();
     }
+}
+
+function nextTrack(index) {
+    return dashboard.currentTracks[index + 1];
 }
 
 
@@ -138,19 +142,26 @@ socket.on('tracksReady', (data) => {
     var json = JSON.parse(data);
     dashboard.currentTracks = json.items;
     dashboard.loading = false;
+
     var firstTrack = {
         index: 0,
         name: json.items[0].track.name,
         artist: json.items[0].track.artists[0].name
     }
 
-    socket.emit('getTrack', firstTrack);
+    loadTrack(firstTrack);
 });
 
 socket.on('trackLoaded', (data) => {
     console.log('Track found. Encoding...');
-})
+});
+
+socket.on('trackPlaying', (index) => {
+    console.log(index)
+});
 
 socket.on('nextTrack', (index) => {
-    console.log(index);
+    var theNextTrack = dashboard.currentTracks[index + 1];
+    loadTrack(theNextTrack);
+    socket.emit('trackLoading');
 });

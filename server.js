@@ -122,6 +122,14 @@ io.on('connection', (socket) => {
             .catch((err) => console.log('Failed to get track: ' + err))
     })
 
+    socket.on('playNextTrack', (index) => {
+        io.emit('nextTrack', index)
+    })
+
+    socket.on('disconnect', ()=> {
+        YT.cleanTemp()
+    })
+
 })
 
 function *getTrackStream(id) {
@@ -130,6 +138,7 @@ function *getTrackStream(id) {
 
     audio
         .on('success', result => processTrack(result))
+        .on('error', error => console.log(error))
         .callMethod('start')
 
     this.body = { "status" : 200 }
@@ -155,9 +164,11 @@ function *spotify() {
 
 function processTrack(file) {
     const filePath = 'public/files/audio.mp3'
-
-    fs.unlinkSync(filePath)
     
+    if (fs.existsSync(filePath))  {
+      fs.unlinkSync(filePath)
+    }
+
     fs.move(file.file_location, filePath, function(err) {
         if (err) return console.error(err)
         io.emit('audioReady')
