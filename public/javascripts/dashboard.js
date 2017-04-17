@@ -76,7 +76,7 @@ function loadTrack(track) {
 
     newCurrentlyPlayingItem.classList.add('is-playing');
 
-    socket.emit('playTrack', track);
+    socket.emit('getTrack', track);
 }
 
 function loadTracks(event, id) {
@@ -144,8 +144,12 @@ socket.on('tracksReady', (data) => {
         artist: json.items[0].track.artists[0].name
     }
 
-    socket.emit('playTrack', firstTrack);
+    socket.emit('getTrack', firstTrack);
 });
+
+socket.on('trackLoaded', (data) => {
+    console.log('Track found. Encoding...');
+})
 
 socket.on('nextTrack', (index) => {
     console.log(index);

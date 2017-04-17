@@ -1,5 +1,7 @@
 'use strict';
 
+// this is what a file looks like when you hackathon willy-nilly with no plan
+
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -42,9 +44,17 @@ var _querystring = require('querystring');
 
 var _querystring2 = _interopRequireDefault(_querystring);
 
+var _ytmp3dlCore = require('ytmp3dl-core');
+
+var _ytmp3dlCore2 = _interopRequireDefault(_ytmp3dlCore);
+
+var _fsExtra = require('fs-extra');
+
+var _fsExtra2 = _interopRequireDefault(_fsExtra);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _marked = [index, overlay, dashboard, callback, spotify].map(regeneratorRuntime.mark);
+var _marked = [index, overlay, dashboard, getTrackStream, callback, spotify].map(regeneratorRuntime.mark);
 
 _dotenv2.default.config();
 
@@ -58,6 +68,9 @@ var HOSTNAMES = {
     },
     google: {
         api: 'www.googleapis.com'
+    },
+    soundcloud: {
+        api: 'api.soundcloud.com'
     }
 };
 var CLIENT_IDS = {
@@ -67,11 +80,16 @@ var CLIENT_IDS = {
     },
     google: {
         api_key: process.env.GOOGLE_API_KEY
+    },
+    soundcloud: {
+        id: process.env.SOUNDCLOUD_ID,
+        secret: process.env.SOUNDCLOUD_SECRET,
+        redirect_uri: process.env.SOUNDCLOUD_REDIRECT_URI
     }
 };
 var state = Math.round(Math.pow(36, 33) - Math.random() * Math.pow(36, 32)).toString(36).slice(1);
 
-app.use((0, _koaStaticFolder2.default)('./public')).use(_koaRoute2.default.get('/', index)).use(_koaRoute2.default.get('/connect/:client_id', spotify)).use(_koaRoute2.default.get('/connect/:client_id/callback', callback)).use(_koaRoute2.default.get('/dashboard/:id', dashboard)).use(_koaRoute2.default.get('/overlays/:id', overlay));
+app.use((0, _koaStaticFolder2.default)('./public')).use(_koaRoute2.default.get('/', index)).use(_koaRoute2.default.get('/connect/:client_id', spotify)).use(_koaRoute2.default.get('/connect/:client_id/callback', callback)).use(_koaRoute2.default.get('/dashboard/:id', dashboard)).use(_koaRoute2.default.get('/overlays/:id', overlay)).use(_koaRoute2.default.get('/audio/:id', getTrackStream));
 
 var server = _http2.default.createServer(app.callback());
 var io = new _socket2.default(server);
@@ -128,7 +146,7 @@ function dashboard(id) {
         while (1) {
             switch (_context3.prev = _context3.next) {
                 case 0:
-                    template = './views/overlays/_' + id + '.marko';
+                    template = './views/dashboard/_' + id + '.marko';
                     data = {
                         title: 'Cherp\'s Twitch Overlays',
                         id: id
@@ -173,7 +191,7 @@ io.on('connection', function (socket) {
         });
     });
 
-    socket.on('playTrack', function (object) {
+    socket.on('getTrack', function (object) {
         getYouTubeTrack(object).then(function (data) {
             return io.emit('trackLoaded', { data: object, id: JSON.parse(data).items[0].id.videoId });
         }).catch(function (err) {
@@ -182,15 +200,22 @@ io.on('connection', function (socket) {
     });
 });
 
-function callback(client) {
-    return regeneratorRuntime.wrap(function callback$(_context4) {
+function getTrackStream(id) {
+    var audio;
+    return regeneratorRuntime.wrap(function getTrackStream$(_context4) {
         while (1) {
             switch (_context4.prev = _context4.next) {
                 case 0:
+                    audio = new _ytmp3dlCore2.default.Download({ v: id });
 
-                    io.emit(client.toString() + 'Connected', this);
 
-                case 1:
+                    audio.on('success', function (result) {
+                        return processTrack(result);
+                    }).callMethod('start');
+
+                    this.body = { "status": 200 };
+
+                case 3:
                 case 'end':
                     return _context4.stop();
             }
@@ -198,11 +223,27 @@ function callback(client) {
     }, _marked[3], this);
 }
 
-function spotify() {
-    var redirect_uri, url, data;
-    return regeneratorRuntime.wrap(function spotify$(_context5) {
+function callback(client) {
+    return regeneratorRuntime.wrap(function callback$(_context5) {
         while (1) {
             switch (_context5.prev = _context5.next) {
+                case 0:
+
+                    io.emit(client.toString() + 'Connected', this);
+
+                case 1:
+                case 'end':
+                    return _context5.stop();
+            }
+        }
+    }, _marked[4], this);
+}
+
+function spotify() {
+    var redirect_uri, url, data;
+    return regeneratorRuntime.wrap(function spotify$(_context6) {
+        while (1) {
+            switch (_context6.prev = _context6.next) {
                 case 0:
                     redirect_uri = 'http://' + HOSTNAMES.self + '/connect/spotify/callback';
                     url = 'https://' + HOSTNAMES.spotify.auth + '/authorize?client_id=' + CLIENT_IDS.spotify.client_id + '&response_type=code&redirect_uri=' + redirect_uri;
@@ -216,10 +257,21 @@ function spotify() {
 
                 case 5:
                 case 'end':
-                    return _context5.stop();
+                    return _context6.stop();
             }
         }
-    }, _marked[4], this);
+    }, _marked[5], this);
+}
+
+function processTrack(file) {
+    var filePath = 'public/files/audio.mp3';
+
+    _fsExtra2.default.unlinkSync(filePath);
+
+    _fsExtra2.default.move(file.file_location, filePath, function (err) {
+        if (err) return console.error(err);
+        io.emit('audioReady');
+    });
 }
 
 function getYouTubeTrack(object) {
@@ -368,19 +420,17 @@ function getPlaylists(data, object) {
 }
 
 function getPlaylistOptions(data, object) {
-    var options;
+
+    var options = {};
 
     data = JSON.parse(data);
 
     if (object.client == 'spotify') {
         var userId = 'twitchfm';
 
-        options = {
-            method: 'GET',
-            hostname: HOSTNAMES.spotify.api,
-            path: '/v1/users/' + userId + '/playlists'
-        };
-
+        options.method = 'GET';
+        options.hostname = HOSTNAMES.spotify.api;
+        options.path = '/v1/users/' + userId + '/playlists';
         options.headers = {
             "Authorization": data.token_type + ' ' + data.access_token
         };

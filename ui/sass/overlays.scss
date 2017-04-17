@@ -8,6 +8,7 @@
 @import "components/_window";
 @import "components/_background";
 @import "components/_text";
+@import "components/_visualizer";
 
 body {
     background-color: getProperty(overlay, chromakey);

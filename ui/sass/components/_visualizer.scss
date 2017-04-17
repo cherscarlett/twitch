@@ -1,0 +1,25 @@
+.visualizer {
+    &-container {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+    &-image {
+        position: relative;
+        margin-right: 2.5%;
+        width: 15%;
+        display: flex;
+        align-items: center;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .track {
+        font-size: 35vh;
+    }
+}

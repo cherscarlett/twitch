@@ -8,9 +8,9 @@
     }
     &.is-playing {
         &:before {
-            content: '🔴';
+            content: '🔊';
             display: inline-block;
-            padding-right: 4px;
+            padding-right: 8px;
         }
     }
     &:nth-child(even) {

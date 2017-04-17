@@ -989,8 +989,8 @@ svg.cat {
   .track:hover, .track.is-playing {
     font-weight: bold; }
   .track.is-playing:before {
-    content: '🔴';
+    content: '🔊';
     display: inline-block;
-    padding-right: 4px; }
+    padding-right: 8px; }
   .track:nth-child(even) {
     background-color: rgba(128, 128, 128, 0.4); }
