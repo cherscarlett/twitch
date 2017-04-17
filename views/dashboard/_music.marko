@@ -3,10 +3,10 @@ layout-use('../layouts/dashboard.marko', data)
         div.dashboard
             div.loader v-if='loading'
                 - loading...
-            a.connect href='/connect/spotify' v-if='!connected' v-on:click='connect($event)'
+            a.connect v-if='!connected', v-on:click='connect($event)', href='/connect/spotify'
                 - Connect to Spotify
             ul.playlists v-if='playlists.length > 0'
-                li.playlist v-for='(playlist, index) in playlists' v-on:click='tracks($event, playlist.id)' :class="{ 'is-playing' : playlist.isPlaying }"
+                li.playlist v-for='(playlist, index) in playlists', v-on:click='tracks($event, playlist.id)', :class="{ 'is-playing' : playlist.isPlaying }"
                     div.playlist-photo
                         img :src="playlist.images[0].url"
                     div.playlist-metadata
@@ -17,7 +17,7 @@ layout-use('../layouts/dashboard.marko', data)
             div.backdrop v-if='currentTracks.length > 0'
             div.modal v-if='currentTracks.length > 0'
                 ul.tracks
-                    li.track :data-index='index' v-for='(item, index) in currentTracks' v-on:click='track($event, index, item.track.artists[0].name, item.track.name)' :class="{ 'is-playing' : index == 0 }"
+                    li.track :data-index='index', v-for='(item, index) in currentTracks', v-on:click='track($event, index, item.track.artists[0].name, item.track.name)', :class="{ 'is-playing' : index == 0 }"
                         - {{ item.track.artists[0].name }} -
                         - {{ item.track.name }}
         script src="https://unpkg.com/vue/dist/vue.js"
