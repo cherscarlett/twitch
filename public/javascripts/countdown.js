@@ -36,7 +36,7 @@ var familiar = localStorage.getItem("kitty");
 var checkText = "Are you sure? Y/N: ";
 var creating = familiar ? "Error: Create process is already running..." : "Creating...";
 var thinking = familiar ? "🙃" : "Taking awhile...";
-var stillHere = familiar ? "Nothing is actually happening..." : "This is rather inefficient...";
+var stillHere = familiar ? "Writing a new resume..." : "This is rather inefficient...";
 var ctrlCResponse = '^C';
 var ctrlC = '🐱';
 

@@ -54,7 +54,12 @@ var _fsExtra2 = _interopRequireDefault(_fsExtra);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _marked = [index, overlay, dashboard, getTrackStream, callback, spotify].map(regeneratorRuntime.mark);
+var _marked = /*#__PURE__*/regeneratorRuntime.mark(index),
+    _marked2 = /*#__PURE__*/regeneratorRuntime.mark(overlay),
+    _marked3 = /*#__PURE__*/regeneratorRuntime.mark(dashboard),
+    _marked4 = /*#__PURE__*/regeneratorRuntime.mark(getTrackStream),
+    _marked5 = /*#__PURE__*/regeneratorRuntime.mark(callback),
+    _marked6 = /*#__PURE__*/regeneratorRuntime.mark(spotify);
 
 _dotenv2.default.config();
 
@@ -113,7 +118,7 @@ function index() {
                     return _context.stop();
             }
         }
-    }, _marked[0], this);
+    }, _marked, this);
 }
 
 function overlay(id) {
@@ -137,7 +142,7 @@ function overlay(id) {
                     return _context2.stop();
             }
         }
-    }, _marked[1], this);
+    }, _marked2, this);
 }
 
 function dashboard(id) {
@@ -161,7 +166,7 @@ function dashboard(id) {
                     return _context3.stop();
             }
         }
-    }, _marked[2], this);
+    }, _marked3, this);
 }
 
 io.on('connection', function (socket) {
@@ -230,7 +235,7 @@ function getTrackStream(id) {
                     return _context4.stop();
             }
         }
-    }, _marked[3], this);
+    }, _marked4, this);
 }
 
 function callback(client) {
@@ -246,7 +251,7 @@ function callback(client) {
                     return _context5.stop();
             }
         }
-    }, _marked[4], this);
+    }, _marked5, this);
 }
 
 function spotify() {
@@ -270,7 +275,7 @@ function spotify() {
                     return _context6.stop();
             }
         }
-    }, _marked[5], this);
+    }, _marked6, this);
 }
 
 function processTrack(file) {

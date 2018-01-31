@@ -39,9 +39,9 @@ header {
 }
 
 .heading {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Jaapokki Subtract', sans-serif;
     text-anchor: middle;
-    font-size: 2.3em;
+    font-size: 2.4em;
     text-transform: uppercase;
     opacity: .8;
 }
@@ -185,7 +185,7 @@ svg.cat {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        filter: grayscale(100%) brightness(1.4);
+        filter: grayscale(100%) brightness(1.3);
         transition: all 600ms ease-in-out;
 
         a {
@@ -200,7 +200,7 @@ svg.cat {
         }
     }
 
-    $links: twitter, twitch;
+    $links: twitter, twitch, github;
 
     @each $link in $links {
         .#{$link} {
