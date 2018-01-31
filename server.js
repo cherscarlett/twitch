@@ -4,7 +4,7 @@
 
 import 'babel-polyfill'
 import Koa from 'koa'
-//import dotenv from 'dotenv'
+import dotenv from 'dotenv'
 import route from 'koa-route'
 import serve from 'koa-static-folder'
 import marko from 'marko'
@@ -15,7 +15,7 @@ import querystring from 'querystring'
 import YT from 'ytmp3dl-core'
 import fs  from 'fs-extra'
 
-//dotenv.config()
+dotenv.config({silent: true})
 
 const app = new Koa
 const port = process.env.PORT || '8888'
