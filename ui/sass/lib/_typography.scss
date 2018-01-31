@@ -1,29 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC|Kristi|Montserrat|Raleway);
 
 @font-face {
-    font-family: 'Rentukka';
-    src: url(/public/fonts/Rentukka/rentukka-regular-webfont.woff2) format('woff2'),
-         url(/public/fonts/Rentukka/rentukka-regular-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jaapokki';
-    src: url(/public/fonts/Jaapokki/Regular/web/jaapokki-regular.woff) format('woff'),
-         url(/public/fonts/Jaapokki/Regular/web/jaapokki-regular.ttf) format('ttf'),
-         url(/public/fonts/Jaapokki/Regular/web/jaapokki-regular.svg) format('svg'),
-         url(/public/fonts/Jaapokki/Regular/web/jaapokki-regular.eot) format('eot');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Jaapokki Enchance';
     src: url(/public/fonts/Jaapokki/enchance/web/jaapokkienchance-regular.woff) format('woff'),
-         url(/public/fonts/Jaapokki/enchance/web/jaapokkienchance-regular.ttf) format('ttf'),
-         url(/public/fonts/Jaapokki/enchance/web/jaapokkienchance-regular.svg) format('svg'),
-         url(/public/fonts/Jaapokki/enchance/web/jaapokkienchance-regular.eot) format('eot');
+         url(/public/fonts/Jaapokki/enchance/web/jaapokkienchance-regular.ttf) format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,9 +11,7 @@
 @font-face {
     font-family: 'Jaapokki Subtract';
     src: url(/public/fonts/Jaapokki/subtract/web/jaapokkisubtract-regular.woff) format('woff'),
-         url(/public/fonts/Jaapokki/subtract/web/jaapokkisubtract-regular.ttf) format('ttf'),
-         url(/public/fonts/Jaapokki/subtract/web/jaapokkisubtract-regular.svg) format('svg'),
-         url(/public/fonts/Jaapokki/subtract/web/jaapokkisubtract-regular.eot) format('eot');
+         url(/public/fonts/Jaapokki/subtract/web/jaapokkisubtract-regular.ttf) format('ttf');
     font-weight: normal;
     font-style: normal;
 }
