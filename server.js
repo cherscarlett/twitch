@@ -4,7 +4,7 @@
 
 import 'babel-polyfill'
 import Koa from 'koa'
-import dotenv from 'dotenv'
+//import dotenv from 'dotenv'
 import route from 'koa-route'
 import serve from 'koa-static-folder'
 import marko from 'marko'
@@ -15,7 +15,7 @@ import querystring from 'querystring'
 import YT from 'ytmp3dl-core'
 import fs  from 'fs-extra'
 
-dotenv.config()
+//dotenv.config()
 
 const app = new Koa
 const port = process.env.PORT || '8888'
@@ -164,7 +164,7 @@ function *spotify() {
 
 function processTrack(file) {
     const filePath = 'public/files/audio.mp3'
-    
+
     if (fs.existsSync(filePath))  {
       fs.unlinkSync(filePath)
     }
