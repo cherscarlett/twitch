@@ -76,40 +76,40 @@ img {
     left: 31px;
     top: 31px; }
   6.875%, 25% {
-    left: 95px;
-    top: 159px; }
+    left: 671px;
+    top: 287px; }
   25.625%, 43.75% {
-    left: 287px;
-    top: 735px; }
+    left: 543px;
+    top: 543px; }
   44.375%, 62.5% {
-    left: 863px;
-    top: 415px; }
+    left: 479px;
+    top: 223px; }
   63.125%, 81.25% {
-    left: 1055px;
-    top: 735px; }
+    left: 863px;
+    top: 159px; }
   81.875%, 100% {
-    left: 351px;
-    top: 543px; } }
+    left: 1055px;
+    top: 95px; } }
 
 @keyframes movebox {
   6.25% {
     left: 31px;
     top: 31px; }
   6.875%, 25% {
-    left: 95px;
-    top: 159px; }
+    left: 671px;
+    top: 287px; }
   25.625%, 43.75% {
-    left: 287px;
-    top: 735px; }
+    left: 543px;
+    top: 543px; }
   44.375%, 62.5% {
-    left: 863px;
-    top: 415px; }
+    left: 479px;
+    top: 223px; }
   63.125%, 81.25% {
-    left: 1055px;
-    top: 735px; }
+    left: 863px;
+    top: 159px; }
   81.875%, 100% {
-    left: 351px;
-    top: 543px; } }
+    left: 1055px;
+    top: 95px; } }
 
 @-webkit-keyframes fadeboxes {
   to {
@@ -143,257 +143,257 @@ img {
     stroke-width: 1px;
     opacity: 0; }
     .background-dot-highlight[data-index="0"] {
-      left: 1055px;
-      top: 607px;
-      -webkit-animation: fadepoints 23s ease-in-out infinite;
-              animation: fadepoints 23s ease-in-out infinite;
-      -webkit-animation-delay: 3070ms;
-              animation-delay: 3070ms; }
+      left: 863px;
+      top: 159px;
+      -webkit-animation: fadepoints 8s ease-in-out infinite;
+              animation: fadepoints 8s ease-in-out infinite;
+      -webkit-animation-delay: 3925ms;
+              animation-delay: 3925ms; }
     .background-dot-highlight[data-index="1"] {
-      left: 351px;
-      top: 735px;
+      left: 479px;
+      top: 95px;
+      -webkit-animation: fadepoints 7s ease-in-out infinite;
+              animation: fadepoints 7s ease-in-out infinite;
+      -webkit-animation-delay: 461ms;
+              animation-delay: 461ms; }
+    .background-dot-highlight[data-index="2"] {
+      left: 223px;
+      top: 799px;
       -webkit-animation: fadepoints 25s ease-in-out infinite;
               animation: fadepoints 25s ease-in-out infinite;
-      -webkit-animation-delay: 1067ms;
-              animation-delay: 1067ms; }
-    .background-dot-highlight[data-index="2"] {
-      left: 671px;
-      top: 287px;
-      -webkit-animation: fadepoints 13s ease-in-out infinite;
-              animation: fadepoints 13s ease-in-out infinite;
-      -webkit-animation-delay: 2268ms;
-              animation-delay: 2268ms; }
+      -webkit-animation-delay: 874ms;
+              animation-delay: 874ms; }
     .background-dot-highlight[data-index="3"] {
-      left: 95px;
-      top: 799px;
-      -webkit-animation: fadepoints 18s ease-in-out infinite;
-              animation: fadepoints 18s ease-in-out infinite;
-      -webkit-animation-delay: 2900ms;
-              animation-delay: 2900ms; }
+      left: 607px;
+      top: 351px;
+      -webkit-animation: fadepoints 17s ease-in-out infinite;
+              animation: fadepoints 17s ease-in-out infinite;
+      -webkit-animation-delay: 3232ms;
+              animation-delay: 3232ms; }
     .background-dot-highlight[data-index="4"] {
-      left: 159px;
-      top: 95px;
-      -webkit-animation: fadepoints 9s ease-in-out infinite;
-              animation: fadepoints 9s ease-in-out infinite;
-      -webkit-animation-delay: 3160ms;
-              animation-delay: 3160ms; }
+      left: 95px;
+      top: 287px;
+      -webkit-animation: fadepoints 8s ease-in-out infinite;
+              animation: fadepoints 8s ease-in-out infinite;
+      -webkit-animation-delay: 644ms;
+              animation-delay: 644ms; }
     .background-dot-highlight[data-index="5"] {
-      left: 287px;
+      left: 991px;
+      top: 159px;
+      -webkit-animation: fadepoints 7s ease-in-out infinite;
+              animation: fadepoints 7s ease-in-out infinite;
+      -webkit-animation-delay: 1178ms;
+              animation-delay: 1178ms; }
+    .background-dot-highlight[data-index="6"] {
+      left: 863px;
       top: 607px;
+      -webkit-animation: fadepoints 19s ease-in-out infinite;
+              animation: fadepoints 19s ease-in-out infinite;
+      -webkit-animation-delay: 236ms;
+              animation-delay: 236ms; }
+    .background-dot-highlight[data-index="7"] {
+      left: 415px;
+      top: 735px;
       -webkit-animation: fadepoints 10s ease-in-out infinite;
               animation: fadepoints 10s ease-in-out infinite;
-      -webkit-animation-delay: 2910ms;
-              animation-delay: 2910ms; }
-    .background-dot-highlight[data-index="6"] {
-      left: 543px;
+      -webkit-animation-delay: 1732ms;
+              animation-delay: 1732ms; }
+    .background-dot-highlight[data-index="8"] {
+      left: 607px;
+      top: 223px;
+      -webkit-animation: fadepoints 7s ease-in-out infinite;
+              animation: fadepoints 7s ease-in-out infinite;
+      -webkit-animation-delay: 1002ms;
+              animation-delay: 1002ms; }
+    .background-dot-highlight[data-index="9"] {
+      left: 95px;
+      top: 607px;
+      -webkit-animation: fadepoints 19s ease-in-out infinite;
+              animation: fadepoints 19s ease-in-out infinite;
+      -webkit-animation-delay: 4293ms;
+              animation-delay: 4293ms; }
+    .background-dot-highlight[data-index="10"] {
+      left: 223px;
+      top: 351px;
+      -webkit-animation: fadepoints 20s ease-in-out infinite;
+              animation: fadepoints 20s ease-in-out infinite;
+      -webkit-animation-delay: 813ms;
+              animation-delay: 813ms; }
+    .background-dot-highlight[data-index="11"] {
+      left: 351px;
       top: 415px;
+      -webkit-animation: fadepoints 10s ease-in-out infinite;
+              animation: fadepoints 10s ease-in-out infinite;
+      -webkit-animation-delay: 1829ms;
+              animation-delay: 1829ms; }
+    .background-dot-highlight[data-index="12"] {
+      left: 735px;
+      top: 671px;
+      -webkit-animation: fadepoints 6s ease-in-out infinite;
+              animation: fadepoints 6s ease-in-out infinite;
+      -webkit-animation-delay: 2633ms;
+              animation-delay: 2633ms; }
+    .background-dot-highlight[data-index="13"] {
+      left: 671px;
+      top: 735px;
+      -webkit-animation: fadepoints 15s ease-in-out infinite;
+              animation: fadepoints 15s ease-in-out infinite;
+      -webkit-animation-delay: 2657ms;
+              animation-delay: 2657ms; }
+    .background-dot-highlight[data-index="14"] {
+      left: 95px;
+      top: 607px;
       -webkit-animation: fadepoints 12s ease-in-out infinite;
               animation: fadepoints 12s ease-in-out infinite;
-      -webkit-animation-delay: 1454ms;
-              animation-delay: 1454ms; }
-    .background-dot-highlight[data-index="7"] {
+      -webkit-animation-delay: 4587ms;
+              animation-delay: 4587ms; }
+    .background-dot-highlight[data-index="15"] {
+      left: 95px;
+      top: 479px;
+      -webkit-animation: fadepoints 15s ease-in-out infinite;
+              animation: fadepoints 15s ease-in-out infinite;
+      -webkit-animation-delay: 603ms;
+              animation-delay: 603ms; }
+    .background-dot-highlight[data-index="16"] {
+      left: 223px;
+      top: 607px;
+      -webkit-animation: fadepoints 14s ease-in-out infinite;
+              animation: fadepoints 14s ease-in-out infinite;
+      -webkit-animation-delay: 708ms;
+              animation-delay: 708ms; }
+    .background-dot-highlight[data-index="17"] {
+      left: 671px;
+      top: 799px;
+      -webkit-animation: fadepoints 23s ease-in-out infinite;
+              animation: fadepoints 23s ease-in-out infinite;
+      -webkit-animation-delay: 4963ms;
+              animation-delay: 4963ms; }
+    .background-dot-highlight[data-index="18"] {
+      left: 799px;
+      top: 799px;
+      -webkit-animation: fadepoints 20s ease-in-out infinite;
+              animation: fadepoints 20s ease-in-out infinite;
+      -webkit-animation-delay: 949ms;
+              animation-delay: 949ms; }
+    .background-dot-highlight[data-index="19"] {
+      left: 95px;
+      top: 671px;
+      -webkit-animation: fadepoints 20s ease-in-out infinite;
+              animation: fadepoints 20s ease-in-out infinite;
+      -webkit-animation-delay: 580ms;
+              animation-delay: 580ms; }
+    .background-dot-highlight[data-index="20"] {
+      left: 735px;
+      top: 223px;
+      -webkit-animation: fadepoints 25s ease-in-out infinite;
+              animation: fadepoints 25s ease-in-out infinite;
+      -webkit-animation-delay: 2729ms;
+              animation-delay: 2729ms; }
+    .background-dot-highlight[data-index="21"] {
+      left: 607px;
+      top: 543px;
+      -webkit-animation: fadepoints 21s ease-in-out infinite;
+              animation: fadepoints 21s ease-in-out infinite;
+      -webkit-animation-delay: 372ms;
+              animation-delay: 372ms; }
+    .background-dot-highlight[data-index="22"] {
       left: 863px;
+      top: 159px;
+      -webkit-animation: fadepoints 17s ease-in-out infinite;
+              animation: fadepoints 17s ease-in-out infinite;
+      -webkit-animation-delay: 243ms;
+              animation-delay: 243ms; }
+    .background-dot-highlight[data-index="23"] {
+      left: 351px;
+      top: 735px;
+      -webkit-animation: fadepoints 8s ease-in-out infinite;
+              animation: fadepoints 8s ease-in-out infinite;
+      -webkit-animation-delay: 3498ms;
+              animation-delay: 3498ms; }
+    .background-dot-highlight[data-index="24"] {
+      left: 351px;
+      top: 159px;
+      -webkit-animation: fadepoints 12s ease-in-out infinite;
+              animation: fadepoints 12s ease-in-out infinite;
+      -webkit-animation-delay: 3780ms;
+              animation-delay: 3780ms; }
+    .background-dot-highlight[data-index="25"] {
+      left: 159px;
       top: 479px;
       -webkit-animation: fadepoints 21s ease-in-out infinite;
               animation: fadepoints 21s ease-in-out infinite;
-      -webkit-animation-delay: 2680ms;
-              animation-delay: 2680ms; }
-    .background-dot-highlight[data-index="8"] {
-      left: 543px;
-      top: 671px;
-      -webkit-animation: fadepoints 9s ease-in-out infinite;
-              animation: fadepoints 9s ease-in-out infinite;
-      -webkit-animation-delay: 3146ms;
-              animation-delay: 3146ms; }
-    .background-dot-highlight[data-index="9"] {
-      left: 991px;
-      top: 95px;
-      -webkit-animation: fadepoints 10s ease-in-out infinite;
-              animation: fadepoints 10s ease-in-out infinite;
-      -webkit-animation-delay: 4984ms;
-              animation-delay: 4984ms; }
-    .background-dot-highlight[data-index="10"] {
-      left: 95px;
-      top: 735px;
-      -webkit-animation: fadepoints 24s ease-in-out infinite;
-              animation: fadepoints 24s ease-in-out infinite;
-      -webkit-animation-delay: 1887ms;
-              animation-delay: 1887ms; }
-    .background-dot-highlight[data-index="11"] {
-      left: 159px;
-      top: 735px;
-      -webkit-animation: fadepoints 6s ease-in-out infinite;
-              animation: fadepoints 6s ease-in-out infinite;
-      -webkit-animation-delay: 4424ms;
-              animation-delay: 4424ms; }
-    .background-dot-highlight[data-index="12"] {
+      -webkit-animation-delay: 2809ms;
+              animation-delay: 2809ms; }
+    .background-dot-highlight[data-index="26"] {
+      left: 415px;
+      top: 415px;
+      -webkit-animation: fadepoints 15s ease-in-out infinite;
+              animation: fadepoints 15s ease-in-out infinite;
+      -webkit-animation-delay: 3570ms;
+              animation-delay: 3570ms; }
+    .background-dot-highlight[data-index="27"] {
       left: 735px;
       top: 479px;
-      -webkit-animation: fadepoints 19s ease-in-out infinite;
-              animation: fadepoints 19s ease-in-out infinite;
-      -webkit-animation-delay: 1557ms;
-              animation-delay: 1557ms; }
-    .background-dot-highlight[data-index="13"] {
-      left: 735px;
-      top: 735px;
       -webkit-animation: fadepoints 20s ease-in-out infinite;
               animation: fadepoints 20s ease-in-out infinite;
-      -webkit-animation-delay: 2967ms;
-              animation-delay: 2967ms; }
-    .background-dot-highlight[data-index="14"] {
-      left: 223px;
-      top: 479px;
-      -webkit-animation: fadepoints 7s ease-in-out infinite;
-              animation: fadepoints 7s ease-in-out infinite;
-      -webkit-animation-delay: 907ms;
-              animation-delay: 907ms; }
-    .background-dot-highlight[data-index="15"] {
-      left: 799px;
-      top: 159px;
-      -webkit-animation: fadepoints 14s ease-in-out infinite;
-              animation: fadepoints 14s ease-in-out infinite;
-      -webkit-animation-delay: 3380ms;
-              animation-delay: 3380ms; }
-    .background-dot-highlight[data-index="16"] {
-      left: 415px;
-      top: 351px;
+      -webkit-animation-delay: 1321ms;
+              animation-delay: 1321ms; }
+    .background-dot-highlight[data-index="28"] {
+      left: 863px;
+      top: 607px;
       -webkit-animation: fadepoints 23s ease-in-out infinite;
               animation: fadepoints 23s ease-in-out infinite;
-      -webkit-animation-delay: 4393ms;
-              animation-delay: 4393ms; }
-    .background-dot-highlight[data-index="17"] {
-      left: 735px;
-      top: 479px;
-      -webkit-animation: fadepoints 15s ease-in-out infinite;
-              animation: fadepoints 15s ease-in-out infinite;
-      -webkit-animation-delay: 1895ms;
-              animation-delay: 1895ms; }
-    .background-dot-highlight[data-index="18"] {
-      left: 287px;
-      top: 543px;
-      -webkit-animation: fadepoints 15s ease-in-out infinite;
-              animation: fadepoints 15s ease-in-out infinite;
-      -webkit-animation-delay: 67ms;
-              animation-delay: 67ms; }
-    .background-dot-highlight[data-index="19"] {
-      left: 927px;
-      top: 543px;
-      -webkit-animation: fadepoints 12s ease-in-out infinite;
-              animation: fadepoints 12s ease-in-out infinite;
-      -webkit-animation-delay: 2207ms;
-              animation-delay: 2207ms; }
-    .background-dot-highlight[data-index="20"] {
-      left: 287px;
-      top: 607px;
-      -webkit-animation: fadepoints 24s ease-in-out infinite;
-              animation: fadepoints 24s ease-in-out infinite;
-      -webkit-animation-delay: 2521ms;
-              animation-delay: 2521ms; }
-    .background-dot-highlight[data-index="21"] {
-      left: 287px;
-      top: 671px;
-      -webkit-animation: fadepoints 7s ease-in-out infinite;
-              animation: fadepoints 7s ease-in-out infinite;
-      -webkit-animation-delay: 4974ms;
-              animation-delay: 4974ms; }
-    .background-dot-highlight[data-index="22"] {
-      left: 95px;
-      top: 799px;
-      -webkit-animation: fadepoints 20s ease-in-out infinite;
-              animation: fadepoints 20s ease-in-out infinite;
-      -webkit-animation-delay: 3306ms;
-              animation-delay: 3306ms; }
-    .background-dot-highlight[data-index="23"] {
-      left: 799px;
-      top: 479px;
-      -webkit-animation: fadepoints 16s ease-in-out infinite;
-              animation: fadepoints 16s ease-in-out infinite;
-      -webkit-animation-delay: 2668ms;
-              animation-delay: 2668ms; }
-    .background-dot-highlight[data-index="24"] {
-      left: 351px;
-      top: 735px;
-      -webkit-animation: fadepoints 16s ease-in-out infinite;
-              animation: fadepoints 16s ease-in-out infinite;
-      -webkit-animation-delay: 275ms;
-              animation-delay: 275ms; }
-    .background-dot-highlight[data-index="25"] {
-      left: 991px;
-      top: 543px;
-      -webkit-animation: fadepoints 14s ease-in-out infinite;
-              animation: fadepoints 14s ease-in-out infinite;
-      -webkit-animation-delay: 1792ms;
-              animation-delay: 1792ms; }
-    .background-dot-highlight[data-index="26"] {
-      left: 735px;
-      top: 607px;
-      -webkit-animation: fadepoints 16s ease-in-out infinite;
-              animation: fadepoints 16s ease-in-out infinite;
-      -webkit-animation-delay: 653ms;
-              animation-delay: 653ms; }
-    .background-dot-highlight[data-index="27"] {
-      left: 159px;
-      top: 223px;
-      -webkit-animation: fadepoints 9s ease-in-out infinite;
-              animation: fadepoints 9s ease-in-out infinite;
-      -webkit-animation-delay: 3764ms;
-              animation-delay: 3764ms; }
-    .background-dot-highlight[data-index="28"] {
-      left: 671px;
-      top: 479px;
-      -webkit-animation: fadepoints 14s ease-in-out infinite;
-              animation: fadepoints 14s ease-in-out infinite;
-      -webkit-animation-delay: 3646ms;
-              animation-delay: 3646ms; }
+      -webkit-animation-delay: 3361ms;
+              animation-delay: 3361ms; }
     .background-dot-highlight[data-index="29"] {
-      left: 415px;
-      top: 479px;
-      -webkit-animation: fadepoints 17s ease-in-out infinite;
-              animation: fadepoints 17s ease-in-out infinite;
-      -webkit-animation-delay: 1113ms;
-              animation-delay: 1113ms; }
+      left: 735px;
+      top: 607px;
+      -webkit-animation: fadepoints 8s ease-in-out infinite;
+              animation: fadepoints 8s ease-in-out infinite;
+      -webkit-animation-delay: 2413ms;
+              animation-delay: 2413ms; }
     .background-dot-highlight[data-index="30"] {
-      left: 607px;
-      top: 735px;
+      left: 223px;
+      top: 543px;
+      -webkit-animation: fadepoints 15s ease-in-out infinite;
+              animation: fadepoints 15s ease-in-out infinite;
+      -webkit-animation-delay: 1820ms;
+              animation-delay: 1820ms; }
+    .background-dot-highlight[data-index="31"] {
+      left: 95px;
+      top: 223px;
+      -webkit-animation: fadepoints 10s ease-in-out infinite;
+              animation: fadepoints 10s ease-in-out infinite;
+      -webkit-animation-delay: 1286ms;
+              animation-delay: 1286ms; }
+    .background-dot-highlight[data-index="32"] {
+      left: 543px;
+      top: 479px;
+      -webkit-animation: fadepoints 18s ease-in-out infinite;
+              animation: fadepoints 18s ease-in-out infinite;
+      -webkit-animation-delay: 20ms;
+              animation-delay: 20ms; }
+    .background-dot-highlight[data-index="33"] {
+      left: 863px;
+      top: 799px;
+      -webkit-animation: fadepoints 15s ease-in-out infinite;
+              animation: fadepoints 15s ease-in-out infinite;
+      -webkit-animation-delay: 4799ms;
+              animation-delay: 4799ms; }
+    .background-dot-highlight[data-index="34"] {
+      left: 223px;
+      top: 159px;
       -webkit-animation: fadepoints 19s ease-in-out infinite;
               animation: fadepoints 19s ease-in-out infinite;
-      -webkit-animation-delay: 4332ms;
-              animation-delay: 4332ms; }
-    .background-dot-highlight[data-index="31"] {
-      left: 159px;
-      top: 287px;
-      -webkit-animation: fadepoints 20s ease-in-out infinite;
-              animation: fadepoints 20s ease-in-out infinite;
-      -webkit-animation-delay: 2571ms;
-              animation-delay: 2571ms; }
-    .background-dot-highlight[data-index="32"] {
-      left: 415px;
-      top: 159px;
-      -webkit-animation: fadepoints 22s ease-in-out infinite;
-              animation: fadepoints 22s ease-in-out infinite;
-      -webkit-animation-delay: 3029ms;
-              animation-delay: 3029ms; }
-    .background-dot-highlight[data-index="33"] {
-      left: 95px;
-      top: 607px;
-      -webkit-animation: fadepoints 20s ease-in-out infinite;
-              animation: fadepoints 20s ease-in-out infinite;
-      -webkit-animation-delay: 2588ms;
-              animation-delay: 2588ms; }
-    .background-dot-highlight[data-index="34"] {
-      left: 607px;
-      top: 95px;
-      -webkit-animation: fadepoints 13s ease-in-out infinite;
-              animation: fadepoints 13s ease-in-out infinite;
-      -webkit-animation-delay: 1961ms;
-              animation-delay: 1961ms; }
+      -webkit-animation-delay: 3376ms;
+              animation-delay: 3376ms; }
     .background-dot-highlight[data-index="35"] {
-      left: 927px;
-      top: 671px;
-      -webkit-animation: fadepoints 11s ease-in-out infinite;
-              animation: fadepoints 11s ease-in-out infinite;
-      -webkit-animation-delay: 2267ms;
-              animation-delay: 2267ms; }
+      left: 671px;
+      top: 159px;
+      -webkit-animation: fadepoints 9s ease-in-out infinite;
+              animation: fadepoints 9s ease-in-out infinite;
+      -webkit-animation-delay: 686ms;
+              animation-delay: 686ms; }
   .background-square {
     fill: none;
     stroke: rgba(255, 255, 255, 0.3);
@@ -413,161 +413,161 @@ img {
       position: absolute;
       fill: rgba(255, 255, 255, 0.3); }
       .background-square-filled[data-index="0"] {
-        left: 479px;
-        top: 287px;
-        opacity: 0.43;
+        left: 735px;
+        top: 223px;
+        opacity: 0.48;
         -webkit-animation: fadeboxes 18s ease-out alternate infinite;
                 animation: fadeboxes 18s ease-out alternate infinite; }
       .background-square-filled[data-index="1"] {
-        left: 735px;
-        top: 351px;
-        opacity: 0.3;
-        -webkit-animation: fadeboxes 6s ease-out alternate infinite;
-                animation: fadeboxes 6s ease-out alternate infinite; }
-      .background-square-filled[data-index="2"] {
         left: 1055px;
-        top: 479px;
-        opacity: 0.01;
-        -webkit-animation: fadeboxes 12s ease-out alternate infinite;
-                animation: fadeboxes 12s ease-out alternate infinite; }
-      .background-square-filled[data-index="3"] {
-        left: 351px;
-        top: 543px;
-        opacity: 0.51;
+        top: 415px;
+        opacity: 0.36;
         -webkit-animation: fadeboxes 17s ease-out alternate infinite;
                 animation: fadeboxes 17s ease-out alternate infinite; }
-      .background-square-filled[data-index="4"] {
-        left: 223px;
-        top: 735px;
-        opacity: 0.68;
-        -webkit-animation: fadeboxes 8s ease-out alternate infinite;
-                animation: fadeboxes 8s ease-out alternate infinite; }
-      .background-square-filled[data-index="5"] {
-        left: 159px;
-        top: 799px;
-        opacity: 0.07;
-        -webkit-animation: fadeboxes 15s ease-out alternate infinite;
-                animation: fadeboxes 15s ease-out alternate infinite; }
-      .background-square-filled[data-index="6"] {
-        left: 991px;
-        top: 607px;
-        opacity: 0.64;
-        -webkit-animation: fadeboxes 14s ease-out alternate infinite;
-                animation: fadeboxes 14s ease-out alternate infinite; }
-      .background-square-filled[data-index="7"] {
-        left: 223px;
-        top: 351px;
-        opacity: 0.1;
+      .background-square-filled[data-index="2"] {
+        left: 927px;
+        top: 479px;
+        opacity: 0.6;
+        -webkit-animation: fadeboxes 23s ease-out alternate infinite;
+                animation: fadeboxes 23s ease-out alternate infinite; }
+      .background-square-filled[data-index="3"] {
+        left: 287px;
+        top: 159px;
+        opacity: 0.26;
         -webkit-animation: fadeboxes 24s ease-out alternate infinite;
                 animation: fadeboxes 24s ease-out alternate infinite; }
-      .background-square-filled[data-index="8"] {
-        left: 607px;
+      .background-square-filled[data-index="4"] {
+        left: 95px;
+        top: 287px;
+        opacity: 0.02;
+        -webkit-animation: fadeboxes 24s ease-out alternate infinite;
+                animation: fadeboxes 24s ease-out alternate infinite; }
+      .background-square-filled[data-index="5"] {
+        left: 415px;
         top: 95px;
-        opacity: 0.35;
+        opacity: 0.66;
         -webkit-animation: fadeboxes 12s ease-out alternate infinite;
                 animation: fadeboxes 12s ease-out alternate infinite; }
-      .background-square-filled[data-index="9"] {
-        left: 671px;
-        top: 351px;
-        opacity: 0.26;
-        -webkit-animation: fadeboxes 9s ease-out alternate infinite;
-                animation: fadeboxes 9s ease-out alternate infinite; }
-      .background-square-filled[data-index="10"] {
-        left: 1055px;
-        top: 287px;
-        opacity: 0.29;
-        -webkit-animation: fadeboxes 16s ease-out alternate infinite;
-                animation: fadeboxes 16s ease-out alternate infinite; }
-      .background-square-filled[data-index="11"] {
-        left: 607px;
-        top: 799px;
-        opacity: 0.02;
-        -webkit-animation: fadeboxes 8s ease-out alternate infinite;
-                animation: fadeboxes 8s ease-out alternate infinite; }
-      .background-square-filled[data-index="12"] {
-        left: 415px;
+      .background-square-filled[data-index="6"] {
+        left: 863px;
+        top: 543px;
+        opacity: 0.1;
+        -webkit-animation: fadeboxes 21s ease-out alternate infinite;
+                animation: fadeboxes 21s ease-out alternate infinite; }
+      .background-square-filled[data-index="7"] {
+        left: 799px;
         top: 607px;
-        opacity: 0.38;
+        opacity: 0.04;
+        -webkit-animation: fadeboxes 10s ease-out alternate infinite;
+                animation: fadeboxes 10s ease-out alternate infinite; }
+      .background-square-filled[data-index="8"] {
+        left: 351px;
+        top: 671px;
+        opacity: 0.04;
+        -webkit-animation: fadeboxes 21s ease-out alternate infinite;
+                animation: fadeboxes 21s ease-out alternate infinite; }
+      .background-square-filled[data-index="9"] {
+        left: 927px;
+        top: 479px;
+        opacity: 0.41;
         -webkit-animation: fadeboxes 19s ease-out alternate infinite;
                 animation: fadeboxes 19s ease-out alternate infinite; }
+      .background-square-filled[data-index="10"] {
+        left: 415px;
+        top: 95px;
+        opacity: 0.26;
+        -webkit-animation: fadeboxes 13s ease-out alternate infinite;
+                animation: fadeboxes 13s ease-out alternate infinite; }
+      .background-square-filled[data-index="11"] {
+        left: 543px;
+        top: 735px;
+        opacity: 0.49;
+        -webkit-animation: fadeboxes 16s ease-out alternate infinite;
+                animation: fadeboxes 16s ease-out alternate infinite; }
+      .background-square-filled[data-index="12"] {
+        left: 159px;
+        top: 543px;
+        opacity: 0.12;
+        -webkit-animation: fadeboxes 25s ease-out alternate infinite;
+                animation: fadeboxes 25s ease-out alternate infinite; }
       .background-square-filled[data-index="13"] {
-        left: 735px;
-        top: 671px;
+        left: 799px;
+        top: 415px;
         opacity: 0.7;
         -webkit-animation: fadeboxes 13s ease-out alternate infinite;
                 animation: fadeboxes 13s ease-out alternate infinite; }
       .background-square-filled[data-index="14"] {
-        left: 671px;
-        top: 735px;
-        opacity: 0.64;
-        -webkit-animation: fadeboxes 25s ease-out alternate infinite;
-                animation: fadeboxes 25s ease-out alternate infinite; }
+        left: 991px;
+        top: 671px;
+        opacity: 0.27;
+        -webkit-animation: fadeboxes 23s ease-out alternate infinite;
+                animation: fadeboxes 23s ease-out alternate infinite; }
       .background-square-filled[data-index="15"] {
-        left: 287px;
-        top: 479px;
-        opacity: 0.49;
-        -webkit-animation: fadeboxes 23s ease-out alternate infinite;
-                animation: fadeboxes 23s ease-out alternate infinite; }
-      .background-square-filled[data-index="16"] {
-        left: 735px;
-        top: 95px;
-        opacity: 0.34;
-        -webkit-animation: fadeboxes 8s ease-out alternate infinite;
-                animation: fadeboxes 8s ease-out alternate infinite; }
-      .background-square-filled[data-index="17"] {
-        left: 479px;
-        top: 543px;
-        opacity: 0.26;
-        -webkit-animation: fadeboxes 23s ease-out alternate infinite;
-                animation: fadeboxes 23s ease-out alternate infinite; }
-      .background-square-filled[data-index="18"] {
-        left: 479px;
-        top: 223px;
-        opacity: 0.31;
+        left: 415px;
+        top: 415px;
+        opacity: 0.29;
         -webkit-animation: fadeboxes 11s ease-out alternate infinite;
                 animation: fadeboxes 11s ease-out alternate infinite; }
+      .background-square-filled[data-index="16"] {
+        left: 799px;
+        top: 799px;
+        opacity: 0.2;
+        -webkit-animation: fadeboxes 17s ease-out alternate infinite;
+                animation: fadeboxes 17s ease-out alternate infinite; }
+      .background-square-filled[data-index="17"] {
+        left: 607px;
+        top: 223px;
+        opacity: 0.24;
+        -webkit-animation: fadeboxes 6s ease-out alternate infinite;
+                animation: fadeboxes 6s ease-out alternate infinite; }
+      .background-square-filled[data-index="18"] {
+        left: 223px;
+        top: 543px;
+        opacity: 0.44;
+        -webkit-animation: fadeboxes 22s ease-out alternate infinite;
+                animation: fadeboxes 22s ease-out alternate infinite; }
       .background-square-filled[data-index="19"] {
-        left: 927px;
-        top: 159px;
-        opacity: 0.63;
-        -webkit-animation: fadeboxes 15s ease-out alternate infinite;
-                animation: fadeboxes 15s ease-out alternate infinite; }
-      .background-square-filled[data-index="20"] {
-        left: 287px;
+        left: 543px;
         top: 671px;
         opacity: 0.25;
-        -webkit-animation: fadeboxes 14s ease-out alternate infinite;
-                animation: fadeboxes 14s ease-out alternate infinite; }
-      .background-square-filled[data-index="21"] {
-        left: 927px;
-        top: 159px;
-        opacity: 0.56;
-        -webkit-animation: fadeboxes 15s ease-out alternate infinite;
-                animation: fadeboxes 15s ease-out alternate infinite; }
-      .background-square-filled[data-index="22"] {
-        left: 351px;
-        top: 415px;
-        opacity: 0.68;
-        -webkit-animation: fadeboxes 6s ease-out alternate infinite;
-                animation: fadeboxes 6s ease-out alternate infinite; }
-      .background-square-filled[data-index="23"] {
-        left: 927px;
+        -webkit-animation: fadeboxes 12s ease-out alternate infinite;
+                animation: fadeboxes 12s ease-out alternate infinite; }
+      .background-square-filled[data-index="20"] {
+        left: 671px;
         top: 799px;
-        opacity: 0.46;
+        opacity: 0.54;
+        -webkit-animation: fadeboxes 24s ease-out alternate infinite;
+                animation: fadeboxes 24s ease-out alternate infinite; }
+      .background-square-filled[data-index="21"] {
+        left: 671px;
+        top: 223px;
+        opacity: 0.34;
         -webkit-animation: fadeboxes 6s ease-out alternate infinite;
                 animation: fadeboxes 6s ease-out alternate infinite; }
-      .background-square-filled[data-index="24"] {
-        left: 735px;
+      .background-square-filled[data-index="22"] {
+        left: 863px;
+        top: 223px;
+        opacity: 0.26;
+        -webkit-animation: fadeboxes 13s ease-out alternate infinite;
+                animation: fadeboxes 13s ease-out alternate infinite; }
+      .background-square-filled[data-index="23"] {
+        left: 671px;
         top: 415px;
-        opacity: 0.62;
-        -webkit-animation: fadeboxes 23s ease-out alternate infinite;
-                animation: fadeboxes 23s ease-out alternate infinite; }
+        opacity: 0.6;
+        -webkit-animation: fadeboxes 18s ease-out alternate infinite;
+                animation: fadeboxes 18s ease-out alternate infinite; }
+      .background-square-filled[data-index="24"] {
+        left: 1055px;
+        top: 223px;
+        opacity: 0.28;
+        -webkit-animation: fadeboxes 10s ease-out alternate infinite;
+                animation: fadeboxes 10s ease-out alternate infinite; }
       .background-square-filled[data-index="25"] {
-        left: 159px;
-        top: 287px;
-        opacity: 0.15;
-        -webkit-animation: fadeboxes 6s ease-out alternate infinite;
-                animation: fadeboxes 6s ease-out alternate infinite; }
+        left: 927px;
+        top: 95px;
+        opacity: 0.59;
+        -webkit-animation: fadeboxes 18s ease-out alternate infinite;
+                animation: fadeboxes 18s ease-out alternate infinite; }
 
 .visualizer-container {
   display: -webkit-box;
