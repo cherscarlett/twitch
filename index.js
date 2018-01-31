@@ -61,7 +61,7 @@ var _marked = /*#__PURE__*/regeneratorRuntime.mark(index),
     _marked5 = /*#__PURE__*/regeneratorRuntime.mark(callback),
     _marked6 = /*#__PURE__*/regeneratorRuntime.mark(spotify);
 
-_dotenv2.default.config();
+_dotenv2.default.config({ silent: true });
 
 var app = new _koa2.default();
 var port = process.env.PORT || '8888';
