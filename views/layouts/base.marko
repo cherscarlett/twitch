@@ -14,18 +14,19 @@ html lang="en"
         .background
         header
             h1
-                svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="50"
-                    defs
-                        linearGradient id="gradient" x1="100%" y1="100%"
-                            stop offset="0%" stop-color="lightblue" stop-opacity=".5"
-                                animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue" dur="14s" repeatCount="indefinite"
-                            stop offset="0.0990013" stop-color="lightblue" stop-opacity=".5"
-                                animate attributeName="stop-color" values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s" repeatCount="indefinite"
-                                animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="indefinite"
-                    text class='heading' x="50%" y="50%" dy="25%" fill="url(#gradient)"
-                        - Cher Scarlett
-        .body
-        .loader
+                a href="/"
+                    svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="50"
+                        defs
+                            linearGradient id="gradient" x1="100%" y1="100%"
+                                stop offset="0%" stop-color="lightblue" stop-opacity=".5"
+                                    animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue" dur="14s" repeatCount="indefinite"
+                                stop offset="0.0990013" stop-color="lightblue" stop-opacity=".5"
+                                    animate attributeName="stop-color" values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s" repeatCount="indefinite"
+                                    animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="indefinite"
+                        text class='heading' x="50%" y="50%" dy="25%" fill="url(#gradient)"
+                            - Cher Scarlett
+            
+        section.loader
             svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="250 200 800 600" class="cat"
                 defs
                     filter id="polycleaner"
@@ -171,10 +172,19 @@ html lang="en"
                     polygon style="fill:#974F53;" points="786.771,321.277 756.053,354.987 765.866,436.481"
                     polygon style="fill:#8A4256;" points="793.34,440.48 765.866,436.481 786.771,321.277"
 
+
+
+        section.body
+            p
+                - Technical lead at Starbucks, turning code into coffee so you can turn coffee into code.
+
         ul.external
             li.github
                 a href="//github.com/cherscarlett"
                     - twitch.tv/cherp
+            li.linkedin
+                a href="//inkedin.com/in/cherscarlett"
+                    - inkedin.com/in/cherscarlett
             li.twitch
                 a href="//twitch.tv/cherp"
                     - twitch.tv/cherp
