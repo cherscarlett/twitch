@@ -902,6 +902,8 @@ svg.cat {
     background-image: url(/public/images/github.svg); }
   .external .linkedin {
     background-image: url(/public/images/linkedin.svg); }
+  .external .youtube {
+    background-image: url(/public/images/youtube.svg); }
 
 .backdrop {
   position: absolute;

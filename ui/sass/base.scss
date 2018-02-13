@@ -178,7 +178,7 @@ svg.cat {
         }
     }
 
-    $links: twitter, twitch, github, linkedin;
+    $links: twitter, twitch, github, linkedin, youtube;
 
     @each $link in $links {
         .#{$link} {
